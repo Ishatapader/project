@@ -16,7 +16,7 @@ with col1:
     age = st.text_input('Age')
     education= st.multiselect('Education',options=aoi)
 with col2:
-    state = st.text_input('State ')
+    place = st.text_input('Place ')
     designation = st.text_input('Designation ')
     gender = st.selectbox('Gender',options=['Male','Female'])
     
@@ -25,7 +25,7 @@ with col3:
     topic = st.text_input('Topic')
     language = st.selectbox('Language of Introduction',['English','Hindi','Bengali','French','Spanish','Nepali'])
 contents = 'A person whose name is '+name+'. topic is '+topic+'. Age is '+age+'. Level of education is '+",".join(education)
-contents += '. Lives in state of '+state+' The designation of the person is '+designation+'.'
+contents += '.  Name of the place is '+place+' The designation of the person is '+designation+'.'
 contents += 'Gender is '+gender+'. And Institute name is '+institute+'.'
 contents += 'Write a proper speech for me which i will  give to others and it will be profesional which will be within 50 to 100 words with some bullet points and provide the speech regaurding the designation and the topic. Language of the introduction would be'+language+'.'
 a = st.button('Generate')
